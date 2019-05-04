@@ -47,20 +47,20 @@
 
 @media screen and (max-width: 400px) {
 	#s6464 {
-		width: 350px;
+		width: 300px;
 		margin-top: 0px;
 	}
 	#s9664 {
-		width: 350px;
+		width: 300px;
 		margin-top: 0px;
 	}
 	#s4964 {
-		width: 350px;
+		width: 300px;
 	}
 	#s4827 {
-		width: 350px;
+		width: 300px;
 	}
-	#div3d1, #div3d2, #div3d3, #div3d4, #divil, #divil2 {
+	#div3d1, #div3d2, #div3d3, #div3d4, #divil, #divil2, #divil3 {
 		margin-top: 0px;
 	}
 }
