@@ -210,3 +210,14 @@ div.item {
 	}
 
 }
+
+@media screen and (max-width: 400px) {
+
+	.main {
+	 	padding: 0px 0px;
+	 	margin-top: 10%;
+	 	text-align: center;
+	 	margin-left: auto;
+	 	margin-right: auto;
+
+}
