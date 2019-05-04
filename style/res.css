@@ -86,6 +86,7 @@ a.curr {
 
 #abouttext {
   margin-top: 3%;
+  width: 50%;
 }
 
 div.aboutitem {
@@ -150,12 +151,14 @@ div.aboutitem {
   }
   #abouttext {
     font-size: 12px;
+    width: 60%;
   }
 }
 
 @media screen and (max-width: 1100px) {
   #abouttext {
     font-size: 11px;
+    width: 90%;
   }
 }
 
@@ -168,5 +171,14 @@ div.aboutitem {
 @media screen and (max-width: 700px) {
   #abouttext {
     font-size: 8px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  div.aboutitem {
+    width: 150px;
+  }
+  #abouttext {
+    font-size: 5px;
   }
 }
