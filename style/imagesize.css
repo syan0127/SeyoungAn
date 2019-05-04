@@ -1,0 +1,47 @@
+#div3d1 {
+	margin-top: 70px;
+}
+
+#div3d2, #div3d4 {
+	margin-top: 100px;
+}
+
+#div3d3, #divil1, #divil2 {
+	margin-top: 50px;
+}
+
+#divil3 {
+	margin-top: 60px;
+}
+
+@media screen and (max-width: 1400px) {
+	#s6464 {
+		width: 600px;
+		margin-top: 30px;
+	}
+	#s9664 {
+		width: 700px;
+		margin-top: 60px;
+	}
+}
+
+@media screen and (max-width: 700px) {
+	#s6464 {
+		width: 400px;
+		margin-top: 40px;
+	}
+	#s9664 {
+		width: 460px;
+		margin-top: 100px;
+	}
+	#s4964 {
+		width: 400px;
+	}
+	#s4827 {
+		width: 400px;
+	}
+	#div3d1, #div3d2, #div3d3, #div3d4, #divil, #divil2 {
+		margin-top: 30px;
+	}
+	ㅋ
+}

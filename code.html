@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Code</title>
+	<link rel="stylesheet" type="text/css" href="style/style.css">
+	<link rel="stylesheet" type="text/css" href="style/basics.css">
+	<link rel="stylesheet" type="text/css" href="style/480x270.css">
+	<link rel="stylesheet" type="text/css" href="style/res.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+	<link rel="stylesheet" type="text/css" href="style/socialmedia.css">
+	<script src="js/jquery-3.4.0.js"></script>
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+ 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+	<!-- Top navigation-->
+	<div class="topnav" id="myTopnav">
+	  	<a href="index.html" class="seyoung" style="font-weight: 400">SEYOUNG AN</a>
+		<a href="about.html">ABOUT</a>
+	  <div class="dropdown">
+	    <button class="dropbtn">ART 
+	      <i class="fa fa-caret-down"></i>
+	    </button>
+	    <div class="dropdown-content">
+	      <a href="3d.html" class="in">3d modeling</a>
+			<a href="illustration.html" class="in">illustration</a>
+				<a href="misc.html" class="in">misc</a>
+	    </div>
+	  </div> 
+	  	  	<a href="code.html" class="out curr">CODE</a>
+
+	  <a href="javascript:void(0);" style="font-size:10px; color: #fff; font-style: normal;" class="icon seyoung" onclick="myFunction()">&#9776;</a>
+	</div>
+
+	<!-- Side navigation -->
+	<div class="sidenav">
+	  	<a href="index.html" class="title">SEYOUNG AN</a>		
+		<br><br><br>
+	  	<a href="about.html" class="out">ABOUT</a>
+	  	<button class="dropdown-btn">ART
+		</button>
+		<div class="dropdown-container">
+			<a href="3d.html" class="in">3d modeling</a>
+			<a href="illustration.html" class="in">illustration</a>
+			<a href="misc.html" class="in">misc</a>
+		</div>
+		<button class="dropdown-btn" style="color: #0077FF;">CODE
+		</button>
+		<div class="dropdown-container2" id="myNavbar">
+			<nav>
+			<a href="#section1" class="in active" id="nav-item-1">Path Tracer</a>
+			<a href="#section2" class="in" id="nav-item-2">Ray Tracer</a>
+			<a href="#section3" class="in" id="nav-item-3">PennBook</a>
+			<a href="#section4" class="in" id="nav-item-4">Playlist Converter</a>
+			<a href="#section5" class="in" id="nav-item-5">Visualizing the Past</a>
+		</nav>
+		</div>
+	</div>
+
+	<script src="js/script.js"></script>
+	<script src="js/scroll.js"></script>
+
+
+	<!-- Page content -->
+	<div class="code">
+
+		<div id="section1"><a href="section1"></a><br>
+		<h2>Monte Carlo Path Tracer</h2> 
+		<h5><span style="color: #414141; font-style: italic; font-weight: 400">C++, GLM, Qt Creator</span><br>
+		<span style="color: #0077FF; font-weight: 400">Description:</span> Implemented Monte Carlo Path Tracer that includes various integration methods such as full light integrator, direct light integrator, naive integrator and photon mapper. Photon Mapper was optimized using k-d tree data structure. <br>
+		<span style="color: #0077FF; font-weight: 400">Github Link:</span> <a href="https://github.com/syan0127/PathTracer"> here</a> <br>
+		<span style="color: #0077FF; font-weight: 400">Rendered Images:</span><br> 
+
+		<div class="item">
+			<img src="img/finalscene.png" width="100%">
+		    <span class="caption">400spp, depth 5, Full Lighting, 1024x1024, CSG, Lens-based camera, Point Light</span>
+		</div>
+		<div class="item">
+			<img src="img/implicit.png" width="100%">
+		    <span class="caption">400spp, depth 5, Full Lighting, 512x512, , Implicit Surface : Tangled Cube</span>
+		</div>
+		<div class="item">
+			<img src="img/pointlight.png" width="100%">
+		    <span class="caption">100spp, depth 5, Full Lighting, 400x400, Point Light</span>
+		</div>
+		<div class="item">
+		    <img src="img/custom1.png" width="100%">
+		    <span class="caption">400spp, depth 5, Full Lighting 512x512, Transmissive Material</span>
+		</div>
+		<div class="item">
+		    <img src="img/custom2.png" width="100%">
+		    <span class="caption">400spp, depth 5, Full Lighting 512x512, Mirror Material</span>
+		</div>
+		<div class="item">
+		    <img src="img/custom3.png" width="100%">
+		    <span class="caption">400spp, depth 5, Full Lighting 512x512, Matte Material</span>
+		</div>
+		</h5><br><br></div>
+
+
+		<div id="section2"><a href="section2"></a><br>
+		<h2>Ray Tracer</h2> 
+		<h5><span style="color: #414141; font-style: italic; font-weight: 400">C++, GLM, Qt Creator</span><br>
+		<span style="color: #0077FF; font-weight: 400">Description:</span> Created ray tracer engine that performs basic ray tracing operations, including the computation of specular ray reflections and specular ray refractions. Implemented various sampling functions and used them to create effects such as soft shadows and ambient occlusion.<br>
+		<span style="color: #0077FF; font-weight: 400">Github Link:</span> <a href="https://github.com/syan0127/RecursiveRaytracing"> here</a> <br>
+		<span style="color: #0077FF; font-weight: 400">Rendered Images:</span><br> 
+
+		<div class="item">
+			<img src="img/CornellBoxWithAO.png" width="100%">
+		    <span class="caption">Cornell Box w/ Ambient Occlusion</span>
+		</div>
+		<div class="item">
+			<img src="img/areafinal.png" width="100%">
+		    <span class="caption">Cornell Box w/ 2 Lights & Ambient Occlusion</span>
+		</div>
+		<div class="item">
+			<img src="img/reflection_refraction.png" width="100%">
+		    <span class="caption">Cornell Box w/ Reflective and Refractive Materials</span>
+		</div>
+		<div class="item">
+		    <img src="img/AreaLightGrid.png" width="100%">
+		    <span class="caption">Grid Sampling</span>
+		</div>
+		<div class="item">
+		    <img src="img/AreaLightRandom.png" width="100%">
+		    <span class="caption">Random Sampling</span>
+		</div>
+		<div class="item">
+		    <img src="img/AreaLightStratified.png" width="100%">
+		    <span class="caption">Stratified Sampling</span>
+		</div>
+		</h5><br><br></div>
+
+		<div id="section3"><a href="section3"></a><br>
+		<h2>PennBook</h2> 
+		<h5><span style="color: #414141; font-style: italic; font-weight: 400">Node.js, Javascript, HTML/CSS, AWS DynamoDB</span><br>
+		<span style="color: #0077FF; font-weight: 400">Project Members:</span> Hyun Ji Jung, Yeon Sang Jung<br>
+		<span style="color: #0077FF; font-weight: 400">Description:</span> Created a mini Facebook that supports account creation, account update, friend recommendation, chatting, and a friend visualizer. Mainly worked on the front-end features and design such as updating status, adding comments, and updating profile.<br>
+		<span style="color: #0077FF; font-weight: 400">Github Link:</span> <a href="https://github.com/syan0127/MiniFacebook"> here</a> <br>
+		<span style="color: #0077FF; font-weight: 400">Demo:</span><br> 
+		<div class="video-container">
+		  <iframe width="640" height="360" src="https://www.youtube.com/embed/jeAlvflLpzE" frameborder="0" allowfullscreen></iframe>
+		</div>
+		</h5><br><br></div>
+
+		<div id="section4"><a href="section4"></a><br>
+		<h2>Playlist Converter</h2>
+		<h5><span style="color: #414141; font-style: italic; font-weight: 400">Java, Android, Firebase</span><br>
+		<span style="color: #0077FF; font-weight: 400">Project Member:</span> Hyung Seok Roh<br>
+		<span style="color: #0077FF; font-weight: 400">Description:</span> Developed an Android application that allows users to convert a playlist from Youtube to Spotify and share his/her playlist with other registered users.<br>
+		<span style="color: #0077FF; font-weight: 400">Github Link:</span> <a href="https://github.com/syan0127/PlaylistConverter"> here</a> <br>
+		<span style="color: #0077FF; font-weight: 400">Demo:</span><br> 
+		<div class="video-container">
+		  <iframe width="640" height="360" src="https://www.youtube.com/embed/9bSm_o7zulw" frameborder="0" allowfullscreen></iframe>
+		</div>
+		</h5><br><br></div>
+
+		<div id="section5"><a href="section5"></a><br>
+		<h2>Visualizing the Past</h2>
+		<h5><span style="color: #414141; font-style: italic; font-weight: 400">Unreal Game Engine, Autodesk Maya</span><br>
+		<span style="color: #0077FF; font-weight: 400">Project Member:</span> Effie Li, Spencer Webster-Bass, Eli Bogomolny<br>
+		<span style="color: #0077FF; font-weight: 400">Description:</span> Created a VR environment to provide a pedagogical experience about the past through direct interaction with artifacts and the community of people in the Baures village.<br>
+		<span style="color: #0077FF; font-weight: 400">Demo:</span><br> 
+		<div class="video-container">
+		  <iframe width="640" height="360" src="https://www.youtube.com/embed/X6CtiqW5b5w" frameborder="0" allowfullscreen></iframe>
+		</div>
+		<span style="color: #0077FF; font-weight: 400">Research Poster:</span><br>
+		<img src="img/researchposter.png"width="100%" height="auto"><br>
+		</h5><br><br></div>
+	</div>
+	
+</body>
+</html>
