@@ -68,10 +68,17 @@ align-items: center;
 }
 
 .sidenav a.out:hover, .dropdown-btn:hover {
+	text-decoration: none;
 	color: #F98882;
 }
 
 .sidenav a.active {
+	text-decoration: none;
+	color: #0077FF;
+}
+
+.sidenav a.visited {
+	text-decoration: none;
 	color: #0077FF;
 }
 
