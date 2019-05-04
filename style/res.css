@@ -95,7 +95,8 @@ div.aboutitem {
     display: inline-block;
     /* To horizontally center images and caption */
     text-align: center;
-    width: 25%;
+    /*width: 40%;*/
+    width: 300px;
     padding-top: 4%;
 }
 
@@ -119,7 +120,7 @@ div.aboutitem {
     color: #fff;
   }
   div.aboutitem {
-    width: 235px;
+    width: 200px;
   }
 
 }
@@ -162,23 +163,12 @@ div.aboutitem {
   }
 }
 
-@media screen and (max-width: 900px) {
-  #abouttext {
-    font-size: 9px;
-  }
-}
-
 @media screen and (max-width: 700px) {
-  #abouttext {
-    font-size: 8px;
-  }
-}
-
-@media screen and (max-width: 400px) {
   div.aboutitem {
     width: 150px;
   }
   #abouttext {
-    font-size: 5px;
+    font-size: 9px;
+    width: 80%;
   }
 }
